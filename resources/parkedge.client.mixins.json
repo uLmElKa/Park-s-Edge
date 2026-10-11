@@ -1,0 +1,19 @@
+{
+	"required": true,
+	"package": "com.parkedge.client.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"LivingEntityMixin",
+		"AbstractClientPlayerEntityMixin",
+		"InGameHudMixin",
+		"KeyboardInputMixin",
+		"CameraMixin",
+		"PlayerEntityMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

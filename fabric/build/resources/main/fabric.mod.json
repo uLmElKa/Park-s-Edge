@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "parkedge",
+  "version": "1.0.3",
+  "name": "Park's Edge",
+  "description": "This is a parkour mod that tries to resemble the Mirror's Edge franchise.",
+  "authors": [
+    "uLmElKa!"
+  ],
+  "license": "CC0-1.0",
+  "icon": "assets/parkedge/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.parkedge.fabric.ParkEdgeFabric"
+    ],
+    "client": [
+      "com.parkedge.fabric.client.ParkEdgeFabricClient"
+    ],
+    "modmenu": [
+      "com.parkedge.fabric.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "parkedge.mixins.json",
+    "parkedge.client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "architectury": ">=13.0.11",
+    "fabric-api": "*",
+    "cloth-config": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
